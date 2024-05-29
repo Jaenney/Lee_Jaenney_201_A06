@@ -103,15 +103,6 @@ Extract the value `8162` (LeBron James points) in 2 different ways:
 
 ```{r}
 player_info$LJ$points
-```
-
-
-```{r}
-player_info$KB$points
-```
-
-
-```{r}
 player_info[[2]][[4]]
 ```
 
