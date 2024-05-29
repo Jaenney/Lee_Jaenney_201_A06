@@ -102,8 +102,17 @@ Extract the value `8162` (LeBron James points) in 2 different ways:
 - using names
 
 ```{r}
-player_info[[2]][[4]]
 player_info$LJ$points
+```
+
+
+```{r}
+player_info$KB$points
+```
+
+
+```{r}
+player_info[[2]][[4]]
 ```
 
 
@@ -177,6 +186,7 @@ Consider the matrix `mat_rand` of random numbers below.
 rand_num <- c(sample(10:100, 10), sample(100:999, 10), sample(1000:2000, 10))
 
 mat_rand <- matrix(sample(rand_num, 30), ncol = 5)
+
 ```
 
 Use an appropriate apply function to round values with 2 digits to the nearest tens, values with 3 digits to the nearest hundreds, and 4 digits to the nearest thousands.
